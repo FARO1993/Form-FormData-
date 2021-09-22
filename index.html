@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <script async src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form class="mi-form">
+      <div class="nombre">
+        <label for="nombre"><strong>Nombre</strong></label>
+        <input
+          class="text-area"
+          name="nombre"
+          type="text"
+          placeholder="ingresa aquí tu nombre"
+          required
+        />
+      </div>
+      <div class="opciones-temas">
+        <p>
+          <strong>De lo aprendido hasta ahora, ¿qué tema te gustó más?</strong>
+        </p>
+        <select name="opciones" class="opciones" required>
+          <option disabled selected value>Seleccione una opción</option>
+          <option value="typescript">Typescript</option>
+          <option value="promesas">Promesas</option>
+          <option value="clases">Clases</option>
+          <option value="funciones">Funciones</option>
+        </select>
+      </div>
+      <div class="estudiar">
+        <p><strong>Preferís estudiar:</strong></p>
+        <label>
+          <input
+            type="radio"
+            value="de día"
+            name="horario-de-estudio"
+            class="input-radio"
+            checked
+          />De día
+        </label>
+        <label>
+          <input
+            type="radio"
+            value="de noche"
+            name="horario-de-estudio"
+            class="input-radio"
+            checked
+          />De noche
+        </label>
+      </div>
+      <div class="dificultad">
+        <p>
+          <strong>¿Cuáles fueron los temas más complejos hasta ahora?</strong>
+        </p>
+        <label>
+          <input
+            name="tema"
+            value="typescript"
+            type="checkbox"
+            class="input-checkbox"
+          />Typescript
+        </label>
+        <label>
+          <input
+            name="tema"
+            value="promesas"
+            type="checkbox"
+            class="input-checkbox"
+          />Promesas
+        </label>
+        <label>
+          <input
+            name="tema"
+            value="clases"
+            type="checkbox"
+            class="input-checkbox"
+          />Clases
+        </label>
+        <label>
+          <input
+            name="tema"
+            value="funciones"
+            type="checkbox"
+            class="input-checkbox"
+          />Funciones
+        </label>
+      </div>
+      <div class="boton">
+        <button type="submit" class="submit-button">Enviar</button>
+      </div>
+    </form>
+  </body>
+</html>
