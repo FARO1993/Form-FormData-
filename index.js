@@ -5,6 +5,8 @@ function handleSubmit(event) {
 
   const value = Object.fromEntries(data.entries());
 
+  value["tema"] = data.getAll("tema");
+
   console.log({ value });
 }
 
